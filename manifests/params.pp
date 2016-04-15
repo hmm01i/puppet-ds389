@@ -9,7 +9,7 @@ class ds389::params {
   $fullmachinename         = $::fqdn
   $suite_spot_userid         = 'dirsrv'
   $suite_spot_group          = 'dirsrv'
-  $configdirectoryldapurl  = "ldap://${::fqdn}:389/o=netscaperoot"
+  $configdirectoryldapurl  = "ldap://${::fqdn}:389/o=NetscapeRoot"
   $admindomain             = 'example.com'
   $configdirectoryadminid  = 'admin'
   $configdirectoryadminpwd = 'changeit'
