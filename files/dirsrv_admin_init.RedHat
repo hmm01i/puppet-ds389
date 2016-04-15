@@ -133,7 +133,7 @@ start() {
     server_started=0
     if [ $server_running -eq 0 ] ; then
         rm -f $pidfile
-        fix_pid_dir_ownership 
+        fix_pid_dir_ownership
         $start_script
         if [ $? -eq 0 ]; then
             server_started=1 # well, perhaps not running, but started ok
