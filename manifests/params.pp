@@ -44,7 +44,11 @@ class ds389::params {
       $dirsrv_admin_init  = "dirsrv_admin_init.${::osfamily}"
     }
     'RedHat': {
-      $package            = [ '389-ds']
+      $package            = [ '389-ds',
+                              'openldap-client',
+                              'liberation-sans-fonts',
+                              'xorg-x11-xauth',
+                            ]
       $setup_cmd          = '/usr/sbin/setup-ds-admin.pl'
       $dirsrv_init        = ''
       $dirsrv_admin_init  = "dirsrv_admin_init.${::osfamily}"
