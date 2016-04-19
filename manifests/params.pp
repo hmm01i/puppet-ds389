@@ -45,7 +45,7 @@ class ds389::params {
     }
     'RedHat': {
       $package            = [ '389-ds',
-                              'openldap-client',
+                              'openldap-clients',
                               'liberation-sans-fonts',
                               'xorg-x11-xauth',
                             ]
